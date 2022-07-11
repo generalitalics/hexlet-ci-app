@@ -8,6 +8,7 @@ jobs:
     # операционная система для работы воркфлоу
     runs-on: ubuntu-latest
     steps: # список шагов, которые надо выполнить
+        - uses: actions
         - name: run setup
             run: "make setup; make start"
         - name: run linter
