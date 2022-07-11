@@ -10,12 +10,12 @@ jobs:
     steps: # список шагов, которые надо выполнить
         - uses: actions
         - name: a
-            run: "make setup"
-            name: run tests 
+          run: "make setup"
+          name: run tests
         - name: b
-            run: "make lint"
-            needs: a
+          run: "make lint"
+          needs: a
         - name: c
-            run: "make test"
-            needs: a
+          run: "make test"
+          needs: a
 
