@@ -10,7 +10,5 @@ jobs:
     steps: # список шагов, которые надо выполнить
         - uses: actions
         - run: "make setup"
-        - name: run linter
-            run: "make lint"
-        - name: run tests
-            run: "make test"
+        - run: "make lint"
+        - run: "make test"
