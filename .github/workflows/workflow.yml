@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps: # список шагов, которые надо выполнить
         - uses: actions
-        - name: run setup
-            run: "make setup"
+        - run: "make setup"
+        
         - name: run linter
             run: "sh make lint"
         - name: run tests
