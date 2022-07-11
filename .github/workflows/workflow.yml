@@ -8,6 +8,7 @@ jobs:
     # операционная система для работы воркфлоу
     runs-on: ubuntu-latest
     steps: # список шагов, которые надо выполнить
+        - uses: actions
         - uses: owner/repo@ref
         - name: a
           run: "make setup"
@@ -17,5 +18,5 @@ jobs:
           needs: a
         - name: c
           run: "make test"
-          needs: a
+        needs: a
 
