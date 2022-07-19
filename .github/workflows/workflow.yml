@@ -12,7 +12,7 @@ jobs:
 #          uses: owner/repo@ref
           run: "make setup"
         - name: aa
-        run: "make start"
+          run: "make start"
         - name: b
           run: "make lint"
 #          uses: owner/repo@ref
