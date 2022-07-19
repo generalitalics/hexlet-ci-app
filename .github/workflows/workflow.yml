@@ -9,17 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps: # список шагов, которые надо выполнить
         - uses: actions/checkout@v2
-        - uses: ..\Makefile
-        - name: a
-#          uses: owner/repo@ref
+        - name: setup
           run: make setup
-        - name: aa
+        - name: start
           run: make start
-        - name: b
+        - name: lint
           run: make lint
-#          uses: owner/repo@ref
-#          needs: a
-        - name: c
+        - name: test
           run: make test
-#          uses: owner/repo@ref
-#          needs: a
