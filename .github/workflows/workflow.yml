@@ -9,14 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps: # список шагов, которые надо выполнить
         - name: a
-          uses: owner/repo@ref
+#          uses: owner/repo@ref
           run: "make setup"
         - name: b
           run: "make lint"
-          uses: owner/repo@ref
+#          uses: owner/repo@ref
           needs: a
         - name: c
           run: "make test"
-          uses: owner/repo@ref
+#          uses: owner/repo@ref
           needs: a
 
