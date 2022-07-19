@@ -20,4 +20,3 @@ jobs:
           run: "make test"
           needs: a
           uses: owner/repo@ref
-t
