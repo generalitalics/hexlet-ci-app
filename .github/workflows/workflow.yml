@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: # список шагов, которые надо выполнить
         - uses: actions/checkout@v2
+        - udes: ..\Makefile
         - name: a
 #          uses: owner/repo@ref
           run: make setup
