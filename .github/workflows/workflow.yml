@@ -15,8 +15,6 @@ jobs:
             node-version: '14'
         - name: setup
           run: make setup
-        - name: start
-          run: make start
         - name: lint
           run: make lint
         - name: test
