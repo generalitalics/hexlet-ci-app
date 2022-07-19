@@ -14,9 +14,9 @@ jobs:
         - name: b
           run: "make lint"
 #          uses: owner/repo@ref
-          needs: a
+#          needs: a
         - name: c
           run: "make test"
 #          uses: owner/repo@ref
-          needs: a
+#          needs: a
 
