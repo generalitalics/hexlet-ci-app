@@ -11,12 +11,12 @@ jobs:
         - uses: actions
         - name: a
           run: "make setup"
-          uses: owner/repo@ref
+          uses: owner
         - name: b
           run: "make lint"
           needs: a
-          uses: owner/repo@ref
+          uses: owner
         - name: c
           run: "make test"
           needs: a
-          uses: owner/repo@ref
+          uses: owner
