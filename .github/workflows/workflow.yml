@@ -13,12 +13,14 @@ jobs:
           uses: actions/setup-node@v3
           with:
             node-version: '13'
+            cache: 'npm'
         - name: setup
           run: make setup
         - name: lint
           run: make lint
         - name: test
           run: make test
+        - uses: actions/checkout@master
         - name: Run Snyk to check for vulnerabilities
           uses: snyk/actions/node@master
           env:
